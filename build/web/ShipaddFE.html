@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Address Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ff7f50;
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 2px solid #ff7f50;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #ff7f50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e6633d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center><h1>Shipping</h1></center>
+        <h2>Please Enter The Customer ID and Shipping Address</h2><br><br>
+        <form action="ShipaddBE" method="post">
+            <input type="number" name="cid" placeholder="Enter Customer ID"> 
+            <br><br>
+            <input type="text" name="address" placeholder="Enter Address">          
+            <br><br>
+            <input type="submit" value="Confirm order">
+            <br>
+        </form>
+    </div>
+</body>
+</html>
+

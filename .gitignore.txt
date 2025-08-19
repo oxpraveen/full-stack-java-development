@@ -1,0 +1,16 @@
+# Ignore Gradle and build files
+.gradle/
+build/
+out/
+
+# Ignore compiled classes and jars
+*.class
+*.jar
+*.war
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp

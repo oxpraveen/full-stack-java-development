@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Boxicons -->
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <!-- Custom StyleSheet -->
+        <link rel="stylesheet" href="style.css" />
+        <title>Admin Login</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background: linear-gradient(90deg, orange, white);
+            }
+
+            .admin-dashboard {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 50px;
+                color: white;
+            }
+
+            .title {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+
+            .options {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .option-button {
+                width: 250px;
+                padding: 20px;
+                margin: 20px;
+                text-align: center;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                font-size: 20px;
+                font-weight: bold;
+                border: none;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                background-color: #fff;
+                color: #333;
+            }
+
+            .option-button:hover {
+                transform: scale(1.05);
+            }
+
+            .option-button:nth-child(1) {
+                background-color: orange;
+                color: white;
+            }
+
+            .option-button:nth-child(2) {
+                background-color: black;
+                color: white;
+            }
+
+            .option-button:nth-child(3) {
+                background-color: white;
+                color: black;
+            }
+
+            .option-button:nth-child(4) {
+                background-color: #333;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+
+        <header class="header">
+            <nav >
+
+                <img src="logo.png"  class="logob">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="category.html">CATEGORIES</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>       
+                </ul>
+                <form method="post" action="home.html">
+                    <center>
+                        <style>input[type="submit"]:hover {
+                                transform: scale(1.1); /* Enlarges the button on hover */
+                                background-color: black;
+                                color: orange; /* Changes text color to orange on hover */
+                            }</style>
+                        <input type="submit" value="Log out" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease;">
+                    </center>
+                </form>
+            </nav>
+
+            <section>
+                <div class="admin-dashboard">
+                    <div class="title">Admin Dashboard</div>
+                    <div class="options">
+                     
+                           
+                          <form method="post" action="ViewcustBE">
+                  <input type="submit" style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; transition: transform 0.3s ease-in-out; margin: 10px; background-color: orange; color: white;" value="View All Customers">
+            </form>
+                          <form method="post" action="ViewodrBE">
+                <input type="submit" style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; transition: transform 0.3s ease-in-out; margin: 10px; background-color: black; color: white;" value="View All Orders">
+            </form>
+                          <form method="post" action="ViewProdBE">
+                <input type="submit" style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; transition: transform 0.3s ease-in-out; margin: 10px; background-color: white; color: black;" value="View All products">
+            </form>
+                          <form method="post" action="AddprodFE.html">
+                <input type="submit" style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; transition: transform 0.3s ease-in-out; margin: 10px; background-color: #333; color: white;" value="Add Products">
+            </form>
+                   
+                    </div>
+                </div>
+                <br><br><br><br>
+            </section>    
+            <!-----footer-------------------->
+            <section id="footer">
+
+                <div class="foot">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">CONTACT US</a></li>
+
+                    </ul>
+
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-behance"></i></a>
+                        <a href=""><i class="fab fa-dribbble"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </section>
+
+    </body>
+
+</html>

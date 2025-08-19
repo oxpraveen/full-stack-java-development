@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="userstyle.css">
+    </head>
+    <body>
+        <script>
+    function validateForm() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      // Perform basic client-side validation
+      if (email.trim() === '' || password.trim() === '') {
+        alert('Please enter both email and password.');
+        return false;
+      }
+      return true;
+    }
+  </script>
+        <div class="login-container">
+            <form class="login-form" action="Loginval" method="post" onsubmit="return validateForm()">
+                <h2>Login</h2>
+                <label for="email"></label>
+                <input type="text" name="email" placeholder="Email" required>
+                <label for="pwd"></label>
+                <input type="password" name="pwd" placeholder="Password" required>
+                <button type="submit">Login</button>
+                 <p> Forgot Password? <a href="Changepwd.html">Change Password</a></p>
+                 <br>
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+                <br>
+               
+            </form>
+        </div>
+    </body>
+</html>

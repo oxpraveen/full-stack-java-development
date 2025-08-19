@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="style.css" />
+  <title>THE DRIP HOUSE</title>
+</head>
+
+<body>
+  
+  <!-- HEADER -->
+
+ <header class="header">
+  <nav >
+      
+    <img src="logo.png"  class="logob">
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="category.html">CATEGORIES</a></li>
+        <li><a href="">ABOUT US</a></li>
+        <li><a href="">CONTACT US</a></li>
+    </ul>
+      <form method="post" action="OrderBE">
+    <center>
+        <style>input[type="submit"]:hover {
+    transform: scale(1.1); /* Enlarges the button on hover */
+    background-color: black;
+    color: orange; /* Changes text color to orange on hover */
+}</style>
+        <input type="submit" value="View Cart" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease;">
+    </center>
+</form>  
+  </header>
+  <section class="section">
+      <script src="script.js"></script>
+                <div class="h">
+                  <h1>Foot<span>wear</span></h1>
+                </div>
+                <div class="ac-center box">
+                  <div class="ac">
+                    <div class="img-cover">
+                      <img src="shoes1.jpeg" alt="" />
+                    </div>
+                    <p>Running Shoes</p>
+                    <div class="rating">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                    <div class="price">₹ 2500</div>
+                    <div class="button-container">
+                       <div style="display: inline-block;">                                                             
+                                <form action="AddtocartBE">
+                                    <label for="quantity">Quantity: </label><br>
+                                    <center><input type="number" name="quantity" value="1"></center>
+                                    <input type="hidden" name="pid" value="13">                          
+                                    <input type="hidden" name="pname" value="Running Shoes">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="2500">
+                                    
+                                    <input type="submit" value="Add To Cart" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px; "  onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+                                </form>
+                                <form action="userlogin.html">
+                                     
+                                    <input type="hidden" name="pid" value="13">                          
+                                    <input type="hidden" name="pname" value="Running Shoes">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="2500">
+                                   <input type="hidden" name="quantity" value="1"> 
+                                    <input type="submit" value="Buy Now" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+
+                                </form>
+                            </div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="ac">
+                    <div class="img-cover">
+                      <img src="shoes2.jpeg" alt="" />
+                    </div>
+                    <p> White Sneakers</p>
+                    <div class="rating">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                    
+                    <div class="price">₹  2200</div>
+                    <div class="button-container">
+                       <div style="display: inline-block;">                                                             
+                                <form action="AddtocartBE">
+                                    <label for="quantity">Quantity: </label><br>
+                                    <center><input type="number" name="quantity" value="1"></center>
+                                    <input type="hidden" name="pid" value="14">                          
+                                    <input type="hidden" name="pname" value="White Sneakers">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="2200">
+                                    
+                                    <input type="submit" value="Add To Cart" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px; "  onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+                                </form>
+                                <form action="userlogin.html">
+                                     
+                                    <input type="hidden" name="pid" value="14">                          
+                                    <input type="hidden" name="pname" value="White Sneakers">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="2200">
+                                   <input type="hidden" name="quantity" value="1"> 
+                                    <input type="submit" value="Buy Now" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+
+                                </form>
+                            </div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="ac">
+                    <div class="img-cover">
+                      <img src="shoes3.jpeg" alt="" />
+                    </div>
+                    <p>Chelsea Boots</p>
+                    <div class="rating">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                    
+                    <div class="price">₹ 3000</div>
+                    <div class="button-container">
+                       <div style="display: inline-block;">                                                             
+                                <form action="AddtocartBE">
+                                    <label for="quantity">Quantity: </label><br>
+                                    <center><input type="number" name="quantity" value="1"></center>
+                                    <input type="hidden" name="pid" value="15">                          
+                                    <input type="hidden" name="pname" value="Chelsea Boots">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="3000">
+                                    
+                                    <input type="submit" value="Add To Cart" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px; "  onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+                                </form>
+                                <form action="userlogin.html">
+                                     
+                                    <input type="hidden" name="pid" value="15">                          
+                                    <input type="hidden" name="pname" value="Chelsea Boots">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="3000">
+                                   <input type="hidden" name="quantity" value="1"> 
+                                    <input type="submit" value="Buy Now" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+
+                                </form>
+                            </div>
+                       </div>
+                    </div>
+                  </div>
+                    <div class="ac">
+                    <div class="img-cover">
+                      <img src="shoes4.jpeg" alt="" />
+                    </div>
+                    <p>Canvas Sneakers</p>
+                    <div class="rating">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                    
+                    <div class="price">₹ 2000</div>
+                    <div class="button-container">
+                       <div style="display: inline-block;">                                                             
+                                <form action="AddtocartBE">
+                                    <label for="quantity">Quantity: </label><br>
+                                    <center><input type="number" name="quantity" value="1"></center>
+                                    <input type="hidden" name="pid" value="16">                          
+                                    <input type="hidden" name="pname" value="Canvas Sneakers">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="2000">
+                                    
+                                    <input type="submit" value="Add To Cart" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px; "  onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+                                </form>
+                                <form action="userlogin.html">
+                                     
+                                     <input type="hidden" name="pid" value="16">                          
+                                    <input type="hidden" name="pname" value="Canvas Sneakers">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="2000">
+                                   <input type="hidden" name="quantity" value="1"> 
+                                    <input type="submit" value="Buy Now" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+
+                                </form>
+                            </div>
+                       </div>
+                    </div>
+                  </div>
+                    <div class="ac">
+                    <div class="img-cover">
+                      <img src="shoes5.jpeg" alt="" />
+                    </div>
+                    <p>Court Heels</p>
+                    <div class="rating">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                    
+                    <div class="price">₹ 2500</div>
+                    <div class="button-container">
+                       <div style="display: inline-block;">                                                             
+                                <form action="AddtocartBE">
+                                    <label for="quantity">Quantity: </label><br>
+                                    <center><input type="number" name="quantity" value="1"></center>
+                                    <input type="hidden" name="pid" value="17">                          
+                                    <input type="hidden" name="pname" value="Court Heels">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="2500">
+                                    
+                                    <input type="submit" value="Add To Cart" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px; "  onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+                                </form>
+                                <form action="userlogin.html">
+                                     
+                                    <input type="hidden" name="pid" value="17">                          
+                                    <input type="hidden" name="pname" value="Court Heels">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="2500">
+                                   <input type="hidden" name="quantity" value="1"> 
+                                    <input type="submit" value="Buy Now" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+
+                                </form>
+                            </div>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="ac">
+                    <div class="img-cover">
+                      <img src="shoes6.jpeg" alt="" />
+                    </div>
+                    <p>Heeled Sandals</p>
+                    <div class="rating">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                    
+                    <div class="price">₹ 2000</div>
+                    <div class="button-container">
+                       <div style="display: inline-block;">                                                             
+                                <form action="AddtocartBE">
+                                    <label for="quantity">Quantity: </label><br>
+                                    <center><input type="number" name="quantity" value="1"></center>
+                                    <input type="hidden" name="pid" value="18">                          
+                                    <input type="hidden" name="pname" value="Heeled Sandals">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="2000">
+                                    
+                                    <input type="submit" value="Add To Cart" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px; "  onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+                                </form>
+                                <form action="userlogin.html">
+                                     
+                                    <input type="hidden" name="pid" value="18">                          
+                                    <input type="hidden" name="pname" value="Heeled Sandals">
+                                    <input type="hidden" name="category" value="Shoes">
+                                    <input type="hidden" name="pprice" value="2000">
+                                   <input type="hidden" name="quantity" value="1"> 
+                                    <input type="submit" value="Buy Now" style="padding: 10px 20px; font-size: 16px; background-color: black; color: white; border: none; cursor: pointer; transition: all 0.3s ease; border-radius: 5px; margin-top: 10px;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+
+                                </form>
+                            </div>
+                       </div>
+                    </div>
+                    </div>
+                  </div>
+      
+                    
+                  
+              </section>
+  <!-----footer-------------------->
+        <section id="footer">
+            
+            <div class="foot">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+        
+                </ul>
+
+                <div class="social-links">
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-behance"></i></a>
+                    <a href=""><i class="fab fa-dribbble"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                  </div>
+            </div>
+        </section>
+            
+</body>
+</html>
